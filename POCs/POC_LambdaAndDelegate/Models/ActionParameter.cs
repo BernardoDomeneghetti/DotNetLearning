@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace POC_LambdasAndDelegates.Models
+﻿namespace POC_LambdaAndDelegate.Models
 {
-     public class ActionParameter <T>: BaseModel
+    public class ActionParameter<T> : BaseModel
     {
         public T Content { get; set; }
 

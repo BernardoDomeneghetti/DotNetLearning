@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using POC_LambdaAndDelegate.Models;
+using POC_LambdaAndDelegate.Models.Responses;
 
-namespace POC_LambdasAndDelegates.RepositoriesInterfaces
+namespace POC_LambdaAndDelegate.RepositoriesInterfaces
 {
     internal interface ILogRepository
     {
-
+        RepositoryResponses Append(DecriptedAction descriptedAction);
     }
 }

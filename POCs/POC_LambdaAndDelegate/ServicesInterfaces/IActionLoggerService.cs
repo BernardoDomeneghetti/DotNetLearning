@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using POC_LambdasAndDelegates.Models;
+using POC_LambdaAndDelegate.Models;
 
-namespace POC_LambdasAndDelegates.ServicesInterfaces
+namespace POC_LambdaAndDelegate.ServicesInterfaces
 {
     public interface IActionLoggerService
     {

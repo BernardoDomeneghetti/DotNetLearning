@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace POC_LambdasAndDelegates.Models
+﻿namespace POC_LambdaAndDelegate.Models
 {
     public abstract class BaseModel
     {
