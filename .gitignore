@@ -10,3 +10,10 @@
 *.lock
 *.sqlite
 /.vs/VSWorkspaceState.json
+*.v2
+*.v1
+*.cache
+*.BuildWithSkipAnalyzers
+*.editorconfig
+/POCs/POC_LambdaAndDelegate/obj
+/POCs/POC_LambdaAndDelegate/bin/Debug/net6.0
