@@ -1,4 +1,4 @@
-﻿namespace POC_LambdaAndDelegate.Models
+﻿namespace POC_LambdaAndDelegate.Enums
 {
     public enum ActionStatusEnum
     {

@@ -1,4 +1,6 @@
-﻿namespace POC_LambdaAndDelegate.Models
+﻿using POC_LambdaAndDelegate.Enums;
+
+namespace POC_LambdaAndDelegate.Models
 {
     public class DecriptedAction : BaseModel
     {

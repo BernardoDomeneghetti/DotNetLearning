@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using POC_LambdaAndDelegate.Enums;
 using POC_LambdaAndDelegate.Exceptions;
 using POC_LambdaAndDelegate.Models;
 using POC_LambdaAndDelegate.RepositoriesInterfaces;
