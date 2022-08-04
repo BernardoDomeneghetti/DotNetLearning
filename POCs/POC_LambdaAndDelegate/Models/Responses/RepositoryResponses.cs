@@ -5,9 +5,9 @@
         public bool Success { get; set; }
         public string Message { get; set; }
 
-        public RepositoryResponses(bool status, string message)
+        public RepositoryResponses(bool success, string message)
         {
-            Success = status;
+            Success = success;
             Message = message;
         }
     }

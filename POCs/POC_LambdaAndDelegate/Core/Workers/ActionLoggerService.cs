@@ -6,9 +6,9 @@ using POC_LambdaAndDelegate.RepositoriesInterfaces;
 using POC_LambdaAndDelegate.ServicesInterfaces;
 using static POC_LambdaAndDelegate.ServicesInterfaces.IActionLoggerService;
 
-namespace POC_LambdaAndDelegate.Services
+namespace POC_LambdaAndDelegate.Core.Workers
 {
-    internal class ActionLoggerService : IActionLoggerService
+    public class ActionLoggerService : IActionLoggerService
     {
         private readonly ILogRepository _LogRepository;
 
@@ -17,22 +17,37 @@ namespace POC_LambdaAndDelegate.Services
             _LogRepository = logRepository_;
         }
 
-        public IActionResult ExecuteLoggedAction<T>(ActionToLog<T> action, ActionParameter<T> par)
+        public TResponse ExecuteLoggedDelegate<TParam, TResponse>(ActionToLog<TParam, TResponse> action , TParam par)
         {
             try
             {
                 var response = action(par);
-                LogSuccess(action);
+                LogSuccessDelegate(action);
                 return response;
             }
             catch
             {
-                LogFail(action);
+                LogFailDelegate(action);
                 throw;
             }
         }
 
-        private void LogFail<T>(ActionToLog<T> action)
+        public TResponse ExecuteLoggedFunc<TParam, TResponse>(Func<TParam, TResponse> action, TParam par)
+        {
+            try
+            {
+                var response = action(par);
+                LogSuccessLambdaFunc(action);
+                return response;
+            }
+            catch
+            {
+                LogFailLambdaFunc(action);
+                throw;
+            }
+        }
+
+        private void LogFailDelegate <TParam, TResponse>(ActionToLog<TParam, TResponse> action)
         {
             AppendLog(
                 new DecriptedAction(
@@ -43,7 +58,29 @@ namespace POC_LambdaAndDelegate.Services
             );
         }
 
-        private void LogSuccess<T>(ActionToLog<T> action)
+        private void LogFailLambdaFunc<TParam, TResponse>(Func<TParam, TResponse> action)
+        {
+            AppendLog(
+                new DecriptedAction(
+                    status: ActionStatusEnum.Failure,
+                    actionName: action.Method.Name,
+                    actionClassParent: action.GetType().Name
+                )
+            );
+        }
+
+        private void LogSuccessDelegate <TParam, TResponse>(ActionToLog<TParam, TResponse> action)
+        {
+            AppendLog(
+                new DecriptedAction(
+                    status: ActionStatusEnum.Success,
+                    actionName: action.Method.Name,
+                    actionClassParent: action.GetType().Name
+                )
+            );
+        }
+
+        private void LogSuccessLambdaFunc<TParam, TResponse>(Func<TParam, TResponse> action)
         {
             AppendLog(
                 new DecriptedAction(
@@ -68,5 +105,7 @@ namespace POC_LambdaAndDelegate.Services
                 throw new LoggingOperationFailedException(descriptedAction, e.Message);
             }
         }
+
+       
     }
 }

@@ -5,7 +5,9 @@ namespace POC_LambdaAndDelegate.ServicesInterfaces
 {
     public interface IActionLoggerService
     {
-        delegate IActionResult ActionToLog<T> (ActionParameter<T> par);
-        IActionResult ExecuteLoggedAction<T> (ActionToLog<T> action, ActionParameter<T> par);
+        delegate TResponse ActionToLog<TParam, TResponse> (TParam? par);
+
+        TResponse ExecuteLoggedDelegate<TParam, TResponse> (ActionToLog<TParam, TResponse> action, TParam par);
+        TResponse ExecuteLoggedFunc<TParam, TResponse>(Func<TParam, TResponse> action, TParam par);
     }
 }

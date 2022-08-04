@@ -3,7 +3,7 @@ using POC_LambdaAndDelegate.Models.Responses;
 
 namespace POC_LambdaAndDelegate.RepositoriesInterfaces
 {
-    internal interface ILogRepository
+    public interface ILogRepository
     {
         RepositoryResponses Append(DecriptedAction descriptedAction);
     }
