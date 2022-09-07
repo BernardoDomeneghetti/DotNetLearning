@@ -10,3 +10,7 @@
 *.lock
 *.sqlite
 /.vs/VSWorkspaceState.json
+/POCs/POCs/.vs
+/POCs/POCs/Lambda/bin/Debug/net6.0
+/POCs/POCs/Lambda/obj/Debug/net6.0
+/POCs/POCs/Lambda/obj
