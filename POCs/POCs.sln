@@ -3,16 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC_LambdaAndDelegate", "POC_LambdaAndDelegate\POC_LambdaAndDelegate.csproj", "{8B6EEF2A-F546-4435-B9D7-92B40090C37F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{79A810B5-0157-4856-BD16-A0BD66FB9AF0}"
 	ProjectSection(SolutionItems) = preProject
 		README.txt = README.txt
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC_Regex", "POC_Regex\POC_Regex.csproj", "{13E32082-AB50-4170-82CE-944ECE8EB715}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocAsyncDll.Worker", "PocAsyncDll\PocAsyncDll.Worker.csproj", "{719A7A14-3392-4BDE-A198-678137DB6C56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandBox", "SandBox\SandBox.csproj", "{5D6F22E4-6C87-4627-8140-AD6352E53E52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocAsyncDll.Common", "PocAsyncDll.Common\PocAsyncDll.Common.csproj", "{9CF63674-0D5C-41CC-A409-FAD47E896D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocAsync", "PocAsync\PocAsync.csproj", "{CD89D14E-F873-49E8-B17E-38169DF9C1ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,21 +20,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8B6EEF2A-F546-4435-B9D7-92B40090C37F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B6EEF2A-F546-4435-B9D7-92B40090C37F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B6EEF2A-F546-4435-B9D7-92B40090C37F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B6EEF2A-F546-4435-B9D7-92B40090C37F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13E32082-AB50-4170-82CE-944ECE8EB715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13E32082-AB50-4170-82CE-944ECE8EB715}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13E32082-AB50-4170-82CE-944ECE8EB715}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13E32082-AB50-4170-82CE-944ECE8EB715}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5D6F22E4-6C87-4627-8140-AD6352E53E52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D6F22E4-6C87-4627-8140-AD6352E53E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D6F22E4-6C87-4627-8140-AD6352E53E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5D6F22E4-6C87-4627-8140-AD6352E53E52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{719A7A14-3392-4BDE-A198-678137DB6C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719A7A14-3392-4BDE-A198-678137DB6C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719A7A14-3392-4BDE-A198-678137DB6C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719A7A14-3392-4BDE-A198-678137DB6C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF63674-0D5C-41CC-A409-FAD47E896D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF63674-0D5C-41CC-A409-FAD47E896D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF63674-0D5C-41CC-A409-FAD47E896D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF63674-0D5C-41CC-A409-FAD47E896D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD89D14E-F873-49E8-B17E-38169DF9C1ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD89D14E-F873-49E8-B17E-38169DF9C1ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD89D14E-F873-49E8-B17E-38169DF9C1ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD89D14E-F873-49E8-B17E-38169DF9C1ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{719A7A14-3392-4BDE-A198-678137DB6C56} = {79A810B5-0157-4856-BD16-A0BD66FB9AF0}
+		{9CF63674-0D5C-41CC-A409-FAD47E896D8D} = {79A810B5-0157-4856-BD16-A0BD66FB9AF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05E08CBD-3BD6-4278-8A56-5BAD89AFE65A}
