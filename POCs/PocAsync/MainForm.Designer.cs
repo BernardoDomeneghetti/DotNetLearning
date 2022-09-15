@@ -115,7 +115,6 @@
             this.Text = "Proof of Concept - Async";
             this.pnlControls.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
 
         #endregion

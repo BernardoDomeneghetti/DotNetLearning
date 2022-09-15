@@ -29,3 +29,6 @@
 /POCs/POC_Async/obj/Debug/net6.0
 /POCs/POC_Async/obj/POC_Async.csproj.nuget.dgspec.json
 /POCs/POC_Async/obj
+/POCs/PocAsyncForm/obj
+/POCs/PocAsyncConsole/obj
+/POCs/PocAsyncConsole/bin/Debug/net6.0
