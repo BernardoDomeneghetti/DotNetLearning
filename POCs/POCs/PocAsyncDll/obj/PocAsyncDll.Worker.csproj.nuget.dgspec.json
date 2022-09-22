@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Berna\\source\\repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj": {}
+    "C:\\Users\\Berna\\Source\\Repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Berna\\source\\repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj": {
+    "C:\\Users\\Berna\\Source\\Repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Berna\\source\\repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Berna\\Source\\Repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj",
         "projectName": "PocAsyncDll.Common",
-        "projectPath": "C:\\Users\\Berna\\source\\repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj",
+        "projectPath": "C:\\Users\\Berna\\Source\\Repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj",
         "packagesPath": "C:\\Users\\Berna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Berna\\source\\repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\obj\\",
+        "outputPath": "C:\\Users\\Berna\\Source\\Repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\Berna\\source\\repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj": {
+    "C:\\Users\\Berna\\Source\\Repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Berna\\source\\repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj",
+        "projectUniqueName": "C:\\Users\\Berna\\Source\\Repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj",
         "projectName": "PocAsyncDll.Worker",
-        "projectPath": "C:\\Users\\Berna\\source\\repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj",
+        "projectPath": "C:\\Users\\Berna\\Source\\Repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj",
         "packagesPath": "C:\\Users\\Berna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Berna\\source\\repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\obj\\",
+        "outputPath": "C:\\Users\\Berna\\Source\\Repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Berna\\source\\repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj": {
-                "projectPath": "C:\\Users\\Berna\\source\\repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj"
+              "C:\\Users\\Berna\\Source\\Repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj": {
+                "projectPath": "C:\\Users\\Berna\\Source\\Repos\\BernardoDomeneghetti\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj"
               }
             }
           }
