@@ -40,3 +40,6 @@
 /POCs/PocAsyncForm/obj
 /POCs/PocAsyncConsole/obj
 /POCs/PocAsyncConsole/bin/Debug/net6.0
+/POCs/POCs/PocAsyncConsole/obj/Debug/net6.0
+/POCs/POCs/PocAsyncDll/obj/Debug/net6.0
+/POCs/POCs/PocAsyncDll.Common/obj/Debug/net6.0
