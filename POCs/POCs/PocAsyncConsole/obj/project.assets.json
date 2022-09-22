@@ -614,6 +614,20 @@
         "runtime": {
           "bin/placeholder/PocAsyncDll.Common.dll": {}
         }
+      },
+      "PocAsyncDll.Worker/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "PocAsyncDll.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PocAsyncDll.Worker.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PocAsyncDll.Worker.dll": {}
+        }
       }
     }
   },
@@ -1350,14 +1364,19 @@
       "type": "project",
       "path": "../PocAsyncDll.Common/PocAsyncDll.Common.csproj",
       "msbuildProject": "../PocAsyncDll.Common/PocAsyncDll.Common.csproj"
+    },
+    "PocAsyncDll.Worker/1.0.0": {
+      "type": "project",
+      "path": "../PocAsyncDll.Worker/PocAsyncDll.Worker.csproj",
+      "msbuildProject": "../PocAsyncDll.Worker/PocAsyncDll.Worker.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj",
       "Microsoft.Extensions.Hosting >= 6.0.1",
       "Microsoft.Extensions.Hosting.Abstractions >= 6.0.0",
-      "PocAsyncDll.Common >= 1.0.0"
+      "PocAsyncDll.Common >= 1.0.0",
+      "PocAsyncDll.Worker >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1396,8 +1415,8 @@
             "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj": {
               "projectPath": "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj"
             },
-            "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj": {
-              "projectPath": "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj"
+            "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Worker\\PocAsyncDll.Worker.csproj": {
+              "projectPath": "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Worker\\PocAsyncDll.Worker.csproj"
             }
           }
         }
@@ -1440,16 +1459,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

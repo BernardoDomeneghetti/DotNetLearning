@@ -6,11 +6,13 @@ namespace PocAsyncConsole
     internal class MenuActions
     {
         private readonly IDocumentWorker _documentWorker;
+
         public MenuActions(IDocumentWorker documentWorker)
         {
             _documentWorker = documentWorker;
         }
-        public void ControlMenu()
+
+        public async Task ControlMenuAsync()
         {
             var option = "";
 
@@ -28,10 +30,11 @@ namespace PocAsyncConsole
                 );
 
                 option = Console.ReadLine();
+                Task task;
                 switch (option)
                 {
                     case "1":
-                        ExecuteSync();
+                        ExecuteSync().Wait();
                         break;
 
                     case "2":
@@ -59,10 +62,26 @@ namespace PocAsyncConsole
                         Console.ReadKey();
                         break;
                 }
+
+                Console.Clear();
+
+                Console.WriteLine("The documents were verified, do you want to:");
+                Console.WriteLine("1 - Exit");
+                Console.WriteLine("Anything - Continue");
+                Console.WriteLine("Type the wanted option: ");
+
+                var option2 = Console.ReadLine();
+
+                if (option2 == "1")
+                {
+                    option = "6";
+                    Exit();
+                }
+                    
             }
         }
 
-        private void Exit()
+        private static void Exit()
         {
             Console.Clear();
             Console.Write("Shutting off");
@@ -77,31 +96,32 @@ namespace PocAsyncConsole
             Thread.Sleep(1000);
         }
 
-        private void ExecuteSync()
+        private async Task ExecuteSync()
         {
             object? result = null;
             var progress = new Progress<DocumentModel>();
-            var tasks = new List<Task>();
+            var cancellationToken = new CancellationTokenSource();
 
-            Task.Factory.StartNew(() =>
+            var taskVerifyDocuments = Task.Factory.StartNew(() =>
             {
                 result = _documentWorker.VerifyDocumentsSync(progress);
             });
 
-            Task.Factory.StartNew(() =>
+            var loadingPrinter = Task.Factory.StartNew(() =>
             {
-                PrintLoading("Starting Syncronous verification", result);
+                PrintLoading("Starting Syncronous verification", cancellationToken.Token);
             });
 
-            Task.WhenAll(tasks);
+            await taskVerifyDocuments;
+            cancellationToken.Cancel();
         }
 
-        private void PrintLoading(string startString, object? response)
+        private static void PrintLoading(string startString, CancellationToken cancellationToken)
         {
             Console.Clear();
             var count = 0;
 
-            while (response == null)
+            while (!cancellationToken.IsCancellationRequested)
             {
                 if (count == 0)
                 {

@@ -36,8 +36,8 @@
               "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj": {
                 "projectPath": "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj"
               },
-              "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj": {
-                "projectPath": "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll\\PocAsyncDll.Worker.csproj"
+              "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Worker\\PocAsyncDll.Worker.csproj": {
+                "projectPath": "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Worker\\PocAsyncDll.Worker.csproj"
               }
             }
           }
@@ -121,6 +121,76 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Worker\\PocAsyncDll.Worker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Worker\\PocAsyncDll.Worker.csproj",
+        "projectName": "PocAsyncDll.Worker",
+        "projectPath": "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Worker\\PocAsyncDll.Worker.csproj",
+        "packagesPath": "C:\\Users\\Bernardo.Doliveira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Worker\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Bernardo.Doliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/GrupoLinxMid-e/_packaging/linx.mide.nuget@Prerelease/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/GrupoLinxMid-e/_packaging/linx.mide.nuget@Release/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj": {
+                "projectPath": "C:\\Users\\Bernardo.Doliveira\\source\\repos\\DotNetLearning\\POCs\\POCs\\PocAsyncDll.Common\\PocAsyncDll.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -10,7 +10,7 @@ internal class Program
     {
         var host = CreateHostBuilder().Build();
         ServiceProvider = host.Services;
-        new MenuActions(new DocumentWorker()).ControlMenu();
+        new MenuActions(new DocumentWorker()).ControlMenuAsync();
     }
 
     public static IServiceProvider? ServiceProvider { get; private set; }

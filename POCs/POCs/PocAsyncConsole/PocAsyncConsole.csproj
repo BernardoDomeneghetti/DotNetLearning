@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PocAsyncDll.Common\PocAsyncDll.Common.csproj" />
-    <ProjectReference Include="..\PocAsyncDll\PocAsyncDll.Worker.csproj" />
+    <ProjectReference Include="..\PocAsyncDll.Worker\PocAsyncDll.Worker.csproj" />
   </ItemGroup>
 
 </Project>
