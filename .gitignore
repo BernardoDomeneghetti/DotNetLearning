@@ -15,3 +15,6 @@
 /POCs/POCs/Lambda/obj/Debug/net6.0
 /POCs/POCs/Lambda/obj
 /POCs/POCs/Async/obj
+/POCs/PocAsyncConsole/obj
+/POCs/PocAsyncDll/obj
+/POCs/PocAsyncDll.Common/obj
