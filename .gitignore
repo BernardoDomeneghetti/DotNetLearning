@@ -47,3 +47,6 @@
 /POCs/POCs/PocAsyncDll.Common/bin/Debug/net6.0
 /POCs/POCs/PocAsyncDll.Worker/bin/Debug/net6.0
 /POCs/POCs/PocAsyncDll.Worker/obj/Debug/net6.0
+/POCs/POCs/PocAsyncDll.Common/obj
+/POCs/POCs/PocAsyncDll.Worker/obj
+/POCs/POCs/PocAsyncConsole/obj

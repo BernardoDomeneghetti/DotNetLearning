@@ -2,7 +2,6 @@
 using PocAsyncConsole;
 using PocAsyncDll.Worker;
 using PocAsyncDll.Worker.Extensions;
-using PocAsyncDll.Worker.Interfaces;
 
 internal class Program
 {

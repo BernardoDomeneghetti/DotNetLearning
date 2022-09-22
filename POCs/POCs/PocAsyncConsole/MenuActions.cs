@@ -12,7 +12,7 @@ namespace PocAsyncConsole
             _documentWorker = documentWorker;
         }
 
-        public async Task ControlMenuAsync()
+        public void ControlMenuAsync()
         {
             var option = "";
 
