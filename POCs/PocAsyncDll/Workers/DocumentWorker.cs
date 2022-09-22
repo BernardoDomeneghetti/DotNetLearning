@@ -4,7 +4,7 @@ using PocAsyncDll.Worker.Interfaces;
 
 namespace PocAsyncDll.Worker
 {
-    internal class DocumentWorker: IDocumentWorker
+    public class DocumentWorker: IDocumentWorker
     {
         public IEnumerable<DocumentModel> VerifyDocumentsSync(IProgress<DocumentModel> progress)
         {

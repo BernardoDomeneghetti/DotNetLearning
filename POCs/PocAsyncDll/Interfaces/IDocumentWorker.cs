@@ -2,7 +2,7 @@
 
 namespace PocAsyncDll.Worker.Interfaces
 {
-    internal interface IDocumentWorker
+    public interface IDocumentWorker
     {
         IEnumerable<DocumentModel> VerifyDocumentsSync(IProgress<DocumentModel> progress);
         Task<IEnumerable<DocumentModel>> VerifyDocumentsBadAsync(IProgress<DocumentModel> progress);
