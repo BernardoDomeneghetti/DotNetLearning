@@ -50,3 +50,7 @@
 /POCs/POCs/PocAsyncDll.Common/obj
 /POCs/POCs/PocAsyncDll.Worker/obj
 /POCs/POCs/PocAsyncConsole/obj
+/POCs/POCs/PocEntityFramework/obj
+/POCs/POCs/PocEntityFramework/bin/Debug/net6.0
+/POCs/POCs/Pocs.Packages.Common/obj
+/POCs/POCs/Pocs.Packages.Common/bin/Debug/net6.0
