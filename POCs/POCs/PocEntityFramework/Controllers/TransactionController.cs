@@ -21,8 +21,9 @@ namespace PocEntityFramework.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IList<Transaction>>> ListTransactions(TransactionFilter filter)
+        public async Task<ActionResult<IList<Transaction>>> ListTransactions( [FromQuery] int id, int responsableId, DateTime sinceDate, DateTime untilDate  )
         {
+            var filter = new TransactionFilter(id, responsableId, sinceDate, untilDate);
             try
             {
                 return Ok(await _transactionWorker.ListTransactions(filter));

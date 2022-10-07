@@ -2,9 +2,17 @@
 {
     public class TransactionFilter
     {
+        public TransactionFilter(int id, int responsableId, DateTime sinceDate, DateTime untilDate)
+        {
+            Id = id;
+            ResponsableId = responsableId;
+            SinceDate = sinceDate;
+            UntilDate = untilDate;
+        }
+
         public int Id { get; set; }
         public int ResponsableId { get; set; }
-        public DateOnly SinceDate { get; set; }
-        public DateOnly UntilDate { get; set; }
+        public DateTime SinceDate { get; set; }
+        public DateTime UntilDate { get; set; }
     }
 }

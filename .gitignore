@@ -54,3 +54,5 @@
 /POCs/POCs/PocEntityFramework/bin/Debug/net6.0
 /POCs/POCs/Pocs.Packages.Common/obj
 /POCs/POCs/Pocs.Packages.Common/bin/Debug/net6.0
+POCs/POCs/PocEntityFramework/.vscode/launch.json
+POCs/POCs/PocEntityFramework/.vscode/tasks.json
