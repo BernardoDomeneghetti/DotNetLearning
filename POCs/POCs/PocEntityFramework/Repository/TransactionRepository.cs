@@ -15,7 +15,7 @@ namespace PocEntityFramework.Repository
             throw new NotImplementedException();
         }
 
-        public async Task<Transaction> SaveNewTransaction(Transaction transaction)
+        public Task<Transaction> SaveNewTransaction(Transaction transaction)
         {
             throw new NotImplementedException();
         }
