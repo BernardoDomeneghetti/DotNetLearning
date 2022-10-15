@@ -30,7 +30,6 @@ namespace PocAsyncConsole
                 );
 
                 option = Console.ReadLine();
-                Task task;
                 switch (option)
                 {
                     case "1":
