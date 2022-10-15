@@ -56,3 +56,17 @@
 /POCs/POCs/Pocs.Packages.Common/bin/Debug/net6.0
 POCs/POCs/PocEntityFramework/.vscode/launch.json
 POCs/POCs/PocEntityFramework/.vscode/tasks.json
+POCs/POCs/ClickToStudy/.vscode/launch.json
+POCs/POCs/ClickToStudy/.vscode/tasks.json
+POCs/POCs/.vscode/settings.json
+POCs/POCs/ClickToStudy/ClickToStudy.WorkerLib/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+POCs/POCs/ClickToStudy/ClickToStudy.WorkerLib/obj/Debug/net6.0/ClickToStudy.WorkerLib.AssemblyInfo.cs
+POCs/POCs/ClickToStudy/ClickToStudy.WorkerLib/obj/Debug/net6.0/ClickToStudy.WorkerLib.GlobalUsings.g.cs
+POCs/POCs/ClickToStudy/ClickToStudy.Mvc/obj/ClickToStudy.Mvc.csproj.nuget.dgspec.json
+POCs/POCs/ClickToStudy/ClickToStudy.Mvc/obj/ClickToStudy.Mvc.csproj.nuget.g.props
+POCs/POCs/ClickToStudy/ClickToStudy.Mvc/obj/ClickToStudy.Mvc.csproj.nuget.g.targets
+POCs/POCs/ClickToStudy/ClickToStudy.Mvc/obj/project.assets.json
+POCs/POCs/ClickToStudy/ClickToStudy.Mvc/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+POCs/POCs/ClickToStudy/ClickToStudy.Mvc/obj/Debug/net6.0/ClickToStudy.Mvc.AssemblyInfo.cs
+POCs/POCs/ClickToStudy/ClickToStudy.Mvc/obj/Debug/net6.0/ClickToStudy.Mvc.GlobalUsings.g.cs
+POCs/POCs/ClickToStudy/ClickToStudy.Mvc/obj/Debug/net6.0/ClickToStudy.Mvc.RazorAssemblyInfo.cs
